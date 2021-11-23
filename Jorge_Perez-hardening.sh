@@ -17,10 +17,9 @@ echo "**********************************"
 #Script should install EPEL repositories only for CENTOS v7 servers
 echo $CENTOS
 if  $CENTOS  = 'VERSION="7"' ;then
- echo "ola"
- yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+ echo "Centos version 8"
 else
- echo "adios"
+ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
 fi
 echo "**********************************"
 #Finally, script should be capable to update all packages having an available update in the repositories.
